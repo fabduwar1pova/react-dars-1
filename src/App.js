@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 
-function App() {
+function Header() {
+  return <h1>Header</h1>;
+}
+
+function Banner() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="border">
+      <h1>Banner</h1>
+      <p>Bu mening birinchi REACT loyiham!</p>
     </div>
   );
 }
 
+function Footer() {
+  return <h1>Footer</h1>;
+}
+
+function App() {
+  let name = "Feruza`s";
+  return (
+    <div className="App">
+      <h1>Hello , {name} World!</h1>
+      <Header />
+      <Banner />
+      <Footer />
+    </div>
+  );
+}
 export default App;
